@@ -67,7 +67,8 @@ public class App1 extends Menu {
             System.out.println("iNGRESE L TERMINO DE FIBONACCI QUE QUIERE SABER");
             int serie=0;
             serie=scanner.nextInt();
-            Matematica.nFibonacci(serie);
+
+            System.out.println("el RESULTADO es "+Matematica.nFibonacci(serie));
             
         }else if(acc==4){
             System.out.println("ingrese el numero para sacarle factorial");
