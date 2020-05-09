@@ -13,9 +13,10 @@ public abstract class Menu {
     public String menu;
     public int opciones;
     public int acc;
-    public Menu(){
+    
+    public Menu(){}
         
-    }
+    
 
     /**
      *

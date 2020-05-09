@@ -1,5 +1,6 @@
 package lab1;
 
+import App1.App1;
 import java.util.Scanner;
 
 public class App  {
@@ -17,8 +18,12 @@ public class App  {
             System.out.println("2.-APP_2");
             System.out.println("3.-SALI");
                Scanner scanner=new Scanner(System.in);
-               while(entrada!=1&&entrada!=){
-                   
+               while(entrada!=1 && entrada!=2&&entrada!=3){
+                   System.out.println("INGRESE UNA OPCION VALIDA");
+                   entrada=scanner.nextInt();
+               }
+               if(entrada==1||entrada==2){
+                   accion(entrada);
                }
             
         }while(entrada!=3);
@@ -26,5 +31,14 @@ public class App  {
         
         
         
+    }
+    
+    public static void accion(int entrada){
+        if(entrada==1){
+            App1 obj1=new App1();
+            obj1.mostrarMenu();
+        }else{
+            
+        }
     }
 }
