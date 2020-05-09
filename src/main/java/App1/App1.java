@@ -19,19 +19,23 @@ public class App1 extends Menu {
     public void mostrarMenu() {
         int entrada=0;
          do{
-            System.out.println("MENU PRINCIPAL");
+            System.out.println("MENU de app 1");
             System.out.println("INGRESE UNAOPCION");
             
-            System.out.println("1.-APP_1");
-            System.out.println("2.-APP_2");
-            System.out.println("3.-SALI");
+            System.out.println("1.-VERIFICAR SI ES PRIMO");
+            System.out.println("2.-MCD");
+            System.out.println("3.-FIBONACCI");
+            
+            System.out.println("4.-FACTORIAL");
+            
+            System.out.println("5.-SALIR");
             
             
-               while(entrada!=1 && entrada!=2&&entrada!=3){
+               while(entrada!=1 && entrada!=2&&entrada!=3&&entrada!=4&&entrada!=5){
                    System.out.println("INGRESE UNA OPCION VALIDA");
                    entrada=scanner.nextInt();
                }
-               if(entrada==1||entrada==2){
+               if(entrada==1||entrada==2||entrada==3||entrada==4){
                    accion(entrada);
                }
             
