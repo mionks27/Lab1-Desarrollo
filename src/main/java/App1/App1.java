@@ -7,6 +7,7 @@ package App1;
 
 import java.util.Scanner;
 import static lab1.App.accion;
+import lab1.Matematica;
 import lab1.Menu;
 
 /**
@@ -44,6 +45,27 @@ public class App1 extends Menu {
 
     @Override
     public void Accion(int acc) {
+              Matematica obj1=new Matematica();
+        if(acc==2){
+               System.out.println("ingrese 2 numeros para sacar el MCD");
+            int num2=scanner.nextInt();
+            int num1=scanner.nextInt();
+      
+            Matematica.mcd(num2,num1);
+            
+        }else if(acc==1){
+            boolean a;
+               System.out.println("ingrese un numero para ver si es primo");
+            int num1=scanner.nextInt();
+            a=Matematica.prime_test(num1);
+            if(a){
+                   System.out.println("ES PRIMO");
+            }else{
+                   System.out.println("no es primo");
+            }
+        }else if(acc=3){
+            
+        }
         }
     
 }
