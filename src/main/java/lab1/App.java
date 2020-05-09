@@ -1,6 +1,8 @@
 package lab1;
 
 import App1.App1;
+import App2.App2;
+
 import java.util.Scanner;
 
 public class App  {
@@ -39,8 +41,9 @@ public class App  {
         if(entrada==1){
             App1 obj1=new App1();
             obj1.mostrarMenu();
-        }else{
-            
+        }else if(entrada==2){
+            App2 obj2 = new App2();
+            obj2.mostrarMenu();
         }
     }
 }
