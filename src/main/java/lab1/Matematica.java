@@ -17,4 +17,16 @@ public class Matematica {
 
     }
 
+    public static int factorialCalc(int numero){
+
+        int fact = 1;
+
+        for (int i = 1; i < numero; i++){
+            fact = fact*i;
+        }
+
+        return fact;
+
+    }
+
 }
