@@ -56,14 +56,25 @@ public class App1 extends Menu {
         }else if(acc==1){
             boolean a;
                System.out.println("ingrese un numero para ver si es primo");
-            int num1=scanner.nextInt();
-            a=Matematica.prime_test(num1);
+            int num3=scanner.nextInt();
+            a=Matematica.prime_test(num3);
             if(a){
                    System.out.println("ES PRIMO");
             }else{
                    System.out.println("no es primo");
             }
-        }else if(acc=3){
+        }else if(acc==3){
+            System.out.println("iNGRESE L TERMINO DE FIBONACCI QUE QUIERE SABER");
+            int serie=0;
+            serie=scanner.nextInt();
+            Matematica.nFibonacci(serie);
+            
+        }else if(acc==4){
+            System.out.println("ingrese el numero para sacarle factorial");
+            int num4=scanner.nextInt();
+           int b;
+                  b = Matematica.factorialCalc(num4);
+                  System.out.println("el factorial es "+b);
             
         }
         }
